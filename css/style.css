@@ -1,0 +1,81 @@
+/*
+Colors used
+
+Primary Color (Blue): #5273B8;
+Secondary Color (Orange): #F37720;
+Third color (white): FFFFFF;
+Gray Color (gray): 3030DF;
+Black color (black): 10193C;
+
+font ovo and muli 
+
+ */
+
+ body {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  line-height: 1.6; /* Sets the line-height to 1.6 */
+  background-color: #F8F8FF;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+div {
+ padding: 10px; /* Adds a 10px inner spacing to all sides */
+ padding: 10px 5px; /* Adds 10px to top & bottom and 5px to left and right */
+ padding: 10px 5px 15px 5px; /* 10px top, 5px right, 15px bottom, 5px left */
+ padding-top: 10px; /* Or you specify the spacing for every direction on it's own */
+ padding-right: 5px;
+ padding-bottom: 15px;
+ padding-left: 5px;
+}
+
+a:visited {
+  /* visited link */
+  color: #F37720;
+}
+
+a:active {
+  /* selected link */
+  color: #5273B8;
+}
+
+a {
+  color: #10193C;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+button {
+  /* overwrite browser defaults */
+  border: none; /* reset the border */
+  font-family: inherit; /* takes the font from the outer container */
+
+  /* style button */
+  background-color: #5273B8;
+  color: white !important;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #10193C; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
+  opacity: 0.7; /* Reduces the opactiy of the button to 80% */
+}
