@@ -10,7 +10,7 @@ Black color (black): 10193C;
 font ovo and muli 
 
  */
-
+ /* MAIN */
  body {
   font-family: 'Muli', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
@@ -18,16 +18,42 @@ font ovo and muli
   background-color: #F8F8FF;
 }
 
+
+/* TYPOGRAPHY */
 h1 {
-  font-size: 30px;
+  font-family: 'Ovo', serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 35px;
+  text-align: center;
+  color: #5273B8;
 }
 
 h2 {
-  font-size: 24px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 40;
+  font-size: 36px;
+  text-align:center;
+  color: #F37720;
 }
 
 h3 {
   font-size: 18px;
+}
+a {
+  color: #10193C;
+}
+a:visited {
+  /* visited link */
+  color: #F37720;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+a:active {
+  /* selected link */
+  color: #5273B8;
 }
 
 div {
@@ -40,25 +66,7 @@ div {
  padding-left: 5px;
 }
 
-a:visited {
-  /* visited link */
-  color: #F37720;
-}
-
-a:active {
-  /* selected link */
-  color: #5273B8;
-}
-
-a {
-  color: #10193C;
-}
-
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
+/* Buttons */
 button {
   /* overwrite browser defaults */
   border: none; /* reset the border */
@@ -66,6 +74,7 @@ button {
 
   /* style button */
   background-color: #5273B8;
+  font-size: 16px;
   color: white !important;
   text-decoration: none;
   padding: 10px;
@@ -78,4 +87,79 @@ button:hover,
 button:focus {
   cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
   opacity: 0.7; /* Reduces the opactiy of the button to 80% */
+}
+
+/* Header & Nav */
+.navigation {
+  list-style-type: none;
+  padding: 0;
+}
+.navigation > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+ul {
+  overflow: hidden;
+  background-color: #5273B8;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #ffffff;
+}
+
+/* Images */
+img {
+    width: 100%;
+}
+
+/* Layout styling */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto; /* No spacing to top and bottom and auto space to left and right */
+}
+.columns-container {
+  font-size: 0;
+}
+.column-4 {
+  font-size: 16px;
+  width: 31%;
+  display: inline-block;
+  margin-right: 1%;
+  text-align: center; /* Centers text */
+}
+
+/* MEDIA */
+@media all and (max-width: 800px) {
+  .logo {
+    /* Make logo smaller by changing it's height */
+    height: 50%;
+    width: 50%;
+  }
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .columns-container {
+    font-size: 0;
+  }
+  .column-4 {
+    /* Modify 4-column to 2-columns */
+    width: 49%;
+    margin-right: 1%;
+  }
 }
